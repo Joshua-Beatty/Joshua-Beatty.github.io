@@ -174,14 +174,30 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
-
-@media (max-aspect-ratio: 3/2) {
-  .img {
-    width: 50%;  /* cyan */
-     padding: 0;
-        padding-bottom: 0;
-  }
-    .img2 {
-        padding-bottom: 0;
-    }
+.img {
+    width: 150px;
+    padding-right:15px;
+    
 }
+.img2 {
+    
+    width: 400px;
+    padding-right:15px;
+}
+.hiden{
+    
+}
+@media (max-aspect-ratio: 3/4) {
+  .img {
+    width: 33%;  /* cyan */
+     padding: 1%;
+     padding-bottom: 0;
+  } 
+    .img2 {
+        clear: both;
+        width: 100%;
+        padding-right:0;
+    }
+        
+    }
+
