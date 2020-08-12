@@ -151,13 +151,13 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
-
+/*
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-}
+}*/
 
 .bg-primary {
   background-color: #3891BD !important;
@@ -170,19 +170,22 @@ section.resume-section .resume-item .resume-date {
 a {
   color: #3891BD;
 }
-
+ 
 a:hover, a:focus, a:active {
   color: #824027;
 }
 .img {
     width: 150px;
-    padding-right:15px;
-    
 }
 .img2 {
     
     width: 400px;
+}
+.imgcontainer {
     padding-right:15px;
+    float: left;
+    padding-bottom:5px;
+    padding-top:10px
 }
 .hiden{
     
