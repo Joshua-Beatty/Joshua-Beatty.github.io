@@ -33,6 +33,8 @@ function scrollTo() {
     let hash = window.location.hash.substr(1)
     let section = document.getElementById(hash.toLowerCase())
     section.scrollIntoView({ behavior: 'smooth' });
+    menu.classList.remove('menuOpen');
+
 }
 
 function onScrollContent(e) {
