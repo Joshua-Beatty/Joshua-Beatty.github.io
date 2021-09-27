@@ -1,4 +1,4 @@
-html * {
+* {
     scroll-behavior: smooth;
 }
 
@@ -12,7 +12,7 @@ body {
     background: #3891bd;
     padding: 0;
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -67,7 +67,12 @@ body {
     display: grid;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 700;
     text-transform: uppercase;
@@ -75,13 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mainContent {
-    position: absolute;
-    top: 0;
-    left: 17rem;
-    height: 100vh;
-    width: calc(100vw - 17rem);
-    overflow: scroll;
-    overflow-x: hidden;
+    padding-left: 17rem;
+    width: calc(100% - 17rem);
+    height: 100%;
 }
 
 .mainContent section {
@@ -217,7 +218,7 @@ a img {
 
 .navTitle {
     color: white;
-    position: absolute;
+    position: fixed;
     left: .3rem;
     top: 0.6rem;
     margin: 0;
@@ -226,7 +227,7 @@ a img {
 
 .navButton {
     color: white;
-    position: absolute;
+    position: fixed;
     right: .3rem;
     top: 0.4rem;
     border: none;
@@ -280,12 +281,9 @@ a img {
         display: none;
     }
     .mainContent {
-        top: 4rem;
-        left: 0;
-        height: calc(100vh - 4rem);
-        width: 100vw;
-        overflow: scroll;
-        overflow-x: hidden;
+        padding-top: 4rem;
+        padding-left: 0;
+        width: 100%;
     }
     .mobileOnly {
         display: block;
@@ -310,15 +308,17 @@ a img {
         display: flex;
     }
 }
+
 @media only screen and (max-width: 481px) {
     a img {
         width: 30vw;
         height: calc(30vw * 40/135);
     }
-    .social-icons a {    height: 12vw;
+    .social-icons a {
+        height: 12vw;
         width: 12vw;
         line-height: 12vw;
-        margin:auto;
+        margin: auto;
         padding: 1vw;
     }
 }
