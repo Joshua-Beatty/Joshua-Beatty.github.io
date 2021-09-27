@@ -2,83 +2,104 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Joshua Beatty</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template -->
 	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+	<link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Custom styles for this template -->
+	<link href="../css/resume.css" rel="stylesheet">
+	<link rel="icon" href="../img/icon.png" type="image/icon type">
 
-	<link rel="stylesheet" href="../main.css">
-	<script>
-
-		window.onload = function (e) {
-
-			menu = document.getElementsByClassName("menuContainer")[0]
-			NavButton.onclick = () => {
-				menu.classList.toggle('menuOpen');
-			}
-		}
-
-	</script>
-
-	<title>Recolor</title>
 </head>
 
 <body id="page-top">
 
-	<div class="menuContainer transform">
-		<menu class="menu">
-			<li><a class="mainPhotoContainer" href="#About"><img class="mainPhoto" src="../img/me.jpg"
-						alt="Me Joshua Beatty"></a></li>
-			<li><a id="back" href="https://joshbeatty.me">Back to main site</a></li>
-		</menu>
-	</div>
-	<h3 class="mobileOnly navTitle">Joshua Beatty</h3>
-	<button class="mobileOnly navButton" id="NavButton">☰</button>
-	<div class="mainContent">
-		<section id="projects">
-			<div>
-				<div>
-					<h2>Recolor</h2>
-					<div style="display:block; clear: both; padding-bottom:50px;">
-						<div style="clear: both;height:1rem"></div>
-						<div class="" style="display:block; clear: both; padding-bottom:50px;">
-							<div style="padding-bottom:15px;">
-								<img src="../img/recolorTitle.png" class="img imgContainer-small">
-								<img src="../img/screenshotRecolor.png" class="img imgContainer-small">
-								<img src="../img/recolorHard.png" class="img imgContainer-small">
-								<p style="display: inline;" class="lead mb-5">Recolor&nbsp;is&nbsp;a simple Simon like
-									memory
-									game developed in Corona SDK. Corona is a cross-platform language build on top of
-									Lua. Using
-									this framework I was able to build a simple game that I have published to both the
-									google
-									play, and apple app store, to positive reception. This application was mostly a test
-									to see
-									how I could use the Corona SDK in the future on bigger projects.</p>
-								<div style="padding-top:15px;display: grid; grid-template-columns: auto auto 1fr">
-									<a href="https://apps.apple.com/us/app/recolor-the-memory-game/id1488708329?mt=8">
-										<img alt='Get it on Google Play' src='../img/getItApple.png' />
-									</a>
-									&nbsp;&nbsp;&nbsp;
-									<a href='https://play.google.com/store/apps/details?id=tk.joshbeatty.recolor'>
-										<img alt='Get it on Google Play' src='../img/getItGoogle.png' />
-									</a>
-								</div>
-							</div>
-						</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+		<a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<span class="d-block d-lg-none">Joshua Beatty</span>
+			<span class="d-none d-lg-block">
+				<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../img/profile.jpg" alt="">
+			</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="../index.html">Back To My site</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
+	<div class="container-fluid p-0">
+
+		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Projects">
+			<div class="w-100">
+
+				<h2 class="mb-5">Recolor</h2>
+				<div class=" mb-5" style="display:block;clear: both;padding-bottom:50px;">
+					<h3> </h3>
+
+					<div style="padding-bottom:15px;">
+						<img src="../img/recolorTitle.png" class="img"
+							style="float: left;padding-bottom:5px;padding-top:10px">
+						<img src="../img/screenshotRecolor.png" class="img"
+							style="float: left;padding-bottom:5px;padding-top:10px">
+						<img src="../img/recolorHard.png" class="img"
+							style="float: left;padding-bottom:5px;padding-top:10px">
+						<p style="display: inline;" class="lead mb-5">Recolor&nbsp;is&nbsp;a simple Simon like memory
+							game developed in Corona SDK. Corona is a cross-platform language build on top of Lua. Using
+							this framework I was able to build a simple game that I have published to both the google
+							play, and apple app store, to positive reception. This application was mostly a test to see
+							how I could use the Corona SDK in the future on bigger projects.</p>
+
+						<div style="padding-top:15px;display: grid; grid-template-columns: auto auto 1fr">
+							<a href="https://apps.apple.com/us/app/recolor-the-memory-game/id1488708329?mt=8"
+								style="overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-11-23&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;float: left;padding-right: 15px;"></a>
+							&nbsp;&nbsp;&nbsp;
+							<a href='https://play.google.com/store/apps/details?id=tk.joshbeatty.recolor'
+								style="overflow:hidden;width:135px;height:40px;float: left;"><img
+									alt='Get it on Google Play' src='../img/GoogleBadge.png' /></a>
+						</div>
 					</div>
 				</div>
-		</section>
 
+			</div>
+	</div>
+
+
+	</section>
+
+
+
+	<hr class="m-0">
 
 	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="../vendor/jquery/jquery.min.js"></script>
+	<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="../js/resume.min.js"></script>
 
 </body>
 
