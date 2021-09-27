@@ -42,7 +42,6 @@ function onScrollContent(e) {
         target = document.body
     }
 
-    console.log(target.scrollTop)
 
     let threshold = 0.1 * aboutSection.offsetHeight;
     if (resumeSection.offsetTop <= target.scrollTop + threshold) {
